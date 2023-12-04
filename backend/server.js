@@ -1,4 +1,3 @@
-import { log } from "node:console";
 import http, { get } from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -15,7 +14,7 @@ const server = http.createServer((req, res) => {
       body = JSON.parse(body);
 
       if (body.password !== body.cpassword) {
-        res.end("le password et le cpassword ne sont pas identiques !!");
+        res.end("les mot de passe ne sont pas identiques !!");
       }
 
       let userData = fs.readFileSync(
