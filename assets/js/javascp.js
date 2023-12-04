@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (maDiv.style.display === "none") {
             divEducation.style.display = "none";
             maDiv.style.display = "block"; // Affiche la div
+            divCivilisation.style.display = "none"
         } else {
             maDiv.style.display = "none"; // Masque la div
             // maDiv.style.display = "block";
@@ -32,6 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (divEducation.style.display === "none") {
             maDiv.style.display = "none";
             divEducation.style.display = "block"; // Affiche la div
+            divCivilisation.style.display = "none"
         } else {
             divEducation.style.display = "none"; // Masque la div
             // divEducation.style.display = "block";
